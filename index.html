@@ -1,0 +1,41 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>代码精灵学院｜生物信息学入门冒险</title><style>
+:root{--ink:#182b49;--muted:#5d6b82;--blue:#dff1ff;--green:#e1f7e9;--pink:#ffe8ed;--gold:#fff2d4;--purple:#f0eaff;--line:#e4eaf2;--accent:#2766bd}*{box-sizing:border-box}body{margin:0;background:#f7f9fc;color:var(--ink);font-family:Inter,"Microsoft YaHei",system-ui,sans-serif;line-height:1.65}a{color:#245db1;text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1120px;margin:auto;padding:0 22px}.hero{padding:48px 0 36px;background:linear-gradient(120deg,#dff1ff,#f1eaff 70%,#e1f7e9)}.eyebrow{font-size:.85rem;font-weight:800;letter-spacing:.08em;color:#3566a7}.hero h1{font-size:clamp(2.1rem,5vw,3.8rem);line-height:1.12;margin:.35em 0}.hero p{max-width:700px;color:#405574;font-size:1.1rem}.nav{display:flex;gap:18px;flex-wrap:wrap;padding:14px 0}.pill{display:inline-block;border:1px solid #d9e3f0;border-radius:99px;padding:7px 13px;background:white;font-size:.92rem}.section{padding:34px 0}.section h2{font-size:1.7rem;margin:0 0 8px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.card{background:white;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 5px 20px #233b5b0a}.card h3{margin:.2em 0}.icon{font-size:1.7rem}.button{display:inline-block;background:#245db1;color:white;border-radius:12px;padding:10px 15px;font-weight:700;margin-top:8px}.button:hover{background:#174989;color:white;text-decoration:none}.soft{background:#eaf4ff;border-radius:18px;padding:18px}.steps{counter-reset:step;list-style:none;padding:0}.steps li{counter-increment:step;margin:12px 0;padding:12px 12px 12px 52px;background:white;border:1px solid var(--line);border-radius:14px;position:relative}.steps li:before{content:counter(step);position:absolute;left:14px;top:12px;background:#dcecff;border-radius:50%;width:26px;height:26px;text-align:center;font-weight:800;color:#245db1}.preview{width:100%;border-radius:16px;border:1px solid var(--line);display:block}.code{position:relative;background:#142238;color:#e8f1ff;border-radius:14px;padding:18px;overflow:auto;font-size:.92rem}.copy{position:absolute;right:10px;top:10px;border:0;background:#eaf2ff;color:#183b72;border-radius:8px;padding:7px 10px;cursor:pointer;font-weight:700}footer{padding:28px 0;color:#66758a;border-top:1px solid var(--line);font-size:.9rem}img{max-width:100%}@media(max-width:600px){.hero{padding-top:30px}.wrap{padding:0 16px}}
+</style></head><body><header class="hero"><div class="wrap"><div class="eyebrow">BIOINFORMATICS · BEGINNER QUEST</div><h1>🪄 代码精灵学院</h1><p>让代码成为你的科研搭档。电脑里住着许多代码精灵：有的来自 R 王国，有的来自 Python 王国。只要用他们国家的语言和他们沟通，他们就会帮你干活啦。先学会描述任务、运行代码、看懂结果，再慢慢理解背后的原理。</p><span class="pill">先做出成果</span> <span class="pill">再逐步理解</span> <span class="pill">AI 是搭档，不是替身</span></div></header>
+<nav class="wrap nav"><a class="pill" href="index.html">首页</a><a class="pill" href="python/index.html">🐍 Python 王国</a><a class="pill" href="r/index.html">📊 R 王国</a><a class="pill" href="#ai-tips">🤖 AI 使用 Tips</a><a class="pill" href="#resources">📦 资源仓库</a></nav>
+<main class="wrap"><section class="section"><h2>选择你的第一位精灵</h2><p class="muted">不用一开始就读懂每一行代码。先跑通一个小任务，看到成果，再回来探索原理。</p><div class="grid"><article class="card"><div class="icon">🐍</div><h3>Python 精灵</h3><p>数据整理、统计、绘图与自动化。打开已生成的代码讲解页面，直接在浏览器中查看代码和图表。</p><a class="button" href="python/index.html">进入 Python 页面 ↗</a><p><a href="downloads/01_Python_statistics.ipynb">下载 Python Notebook</a></p></article><article class="card"><div class="icon">📊</div><h3>R 精灵</h3><p>统计分析、科研绘图与 RNA-seq 流程。浏览器只需查看 HTML，不需要安装 R。</p><a class="button" href="r/index.html">进入 R 页面 ↗</a><p><a href="downloads/02_RNAseq_DESeq2_analysis.R">下载 R 脚本</a></p></article><article class="card"><div class="icon">🤖</div><h3>AI 搭档</h3><p>学会描述目标、提供完整报错、验证代码输出。AI 会犯错，但它可以帮助你开始。</p><a class="button" href="#ai-tips">打开 AI Tips ↓</a></article></div></section>
+<section class="section"><h2>冒险地图</h2><ol class="steps"><li><b>精灵入住电脑：</b>准备软件、项目文件夹和示例数据。</li><li><b>学会沟通：</b>认识变量、数据表、函数、包和文件路径。</li><li><b>解锁科研绘图：</b>从描述统计和箱线图，到 PCA、火山图和热图。</li><li><b>进入生信大陆：</b>用数据练习降维、注释和差异分析。</li><li><b>进阶学院（选修）：</b>机器学习、深度学习与复杂分析流程。</li></ol></section>
+<section class="section" id="learning-modules">
+  <h2>🗺️ 探索更多学习模块</h2>
+
+  <div class="grid">
+    <article class="card">
+      <h3>🧬 实战项目工坊</h3>
+      <p>跟着真实数据完成生信分析。</p>
+      <a href="downloads/projects.rar" download>下载项目包 →</a>
+    </article>
+
+    <article class="card">
+      <h3>🧠 深度学习学院</h3>
+      <p>学习机器学习与 PyTorch。</p>
+      <a href="downloads/deep-learning.rar" download>下载学习包 →</a>
+    </article>
+
+    <article class="card">
+      <h3>🎯 练习题与闯关</h3>
+      <p>通过练习巩固编程与分析技能。</p>
+      <a href="downloads/exercises.rar" download>下载练习包 →</a>
+    </article>
+  </div>
+</section>
+</code></pre></div></section><section class="section" id="resources"><h2>实验室资源仓库</h2><div class="grid"><article class="card"><h3>📘 入门实践手册</h3><p>可编辑 Word 文档，适合按步骤学习。</p><a href="downloads/bioinformatics-handbook.docx">下载 DOCX</a></article>
+  <article class="card">
+  <h3>🐍 Python 统计 Notebook</h3>
+  <p>Python 基础统计与绘图练习。</p>
+  <a href="downloads/01_Python_statistics.ipynb" download>
+    下载 IPYNB
+  </a>
+</article>
+  </article><article class="card"><h3>📊 R / DESeq2 脚本</h3><p>RNA-seq 差异分析流程示例。</p><a href="downloads/02_RNAseq_DESeq2_analysis.R">下载 R 脚本</a>
+  </article><article class="card"><h3>🧪 Python 示例数据</h3><p>统计分析练习用 CSV 文件。</p><a href="data/python_stats_example.csv">下载 CSV</a></article><article class="card"><h3>🧬 RNA-seq count 矩阵</h3><p>与样本信息表配套使用。</p><a href="data/rnaseq_counts.csv">下载 CSV</a></article><article class="card"><h3>🧾 样本信息表</h3><p>记录样本分组等元数据。</p><a href="data/sample_metadata.csv">下载 CSV</a></article></div><p style="margin-top:18px">
+  <img class="preview" src="assets/ppt-resources.png" alt="实践手册资源页截图" style="width: 40%; height: auto;"></p></section>
+<section class="section" id="ai-tips"><h2>🧯 AI 使用小 Tips</h2><p>遇到报错不要慌。AI 可能生成不准确的参数、过时的接口，或误解数据结构。把它当作排查搭档，而不是永远正确的答案。</p><img class="preview" src="assets/ai-tips.png" alt="AI 使用小 Tips 信息卡片"><ol class="steps"><li><b>先冷静，收集完整信息。</b> 把报错、相关代码、运行环境和已经尝试过的步骤一起发给 AI。</li><li><b>追问两三轮。</b> 让 AI 解释原因、给出最小修改，并说明修改依据。</li><li><b>换一种思路或另一个 AI。</b> 不同工具可能提供不同排查方向，但不必机械地数次数。</li><li><b>都不行就检查代码本身。</b> 搜索报错原文、包名和可信代码示例，再结合自己的数据修改。</li><li><b>最后看官方文档。</b> 核对参数、输入格式、包版本与示例；R 可查 CRAN / Bioconductor，Python 可查相应项目文档。</li><li><b>检查结果是否合理。</b> 不只是看代码能否运行，还要检查样本顺序、数据维度、图形标签和生物学解释。</li></ol><div class="soft"><b>记住：</b>说清目标 + 提供数据结构 + 贴出完整报错 + 说明试过什么。代码不是魔法咒语，而是一种表达步骤的语言。</div></section><section class="section"><h2>🎯 第一份通关任务</h2><div class="card"><p>□ 成功打开 Python 或 R 页面</p><p>□ 下载示例数据并读入数据表</p><p>□ 运行一段代码，生成一个结果或图</p><p>□ 遇到报错时，尝试按 AI Tips 排查</p></div><p class="muted">网页浏览不需要安装 R 或 Python。若要亲自运行代码，则需要本地软件或在线运行环境。示例数据仅用于教学练习。</p></section></main><footer><div class="wrap">代码精灵学院 · 生物信息学入门实践 ｜ 先做出成果，再逐步理解。</div></footer><script>document.addEventListener('click',async e=>{const b=e.target.closest('[data-copy]');if(!b)return;const code=b.parentElement.querySelector('code');try{await navigator.clipboard.writeText(code.innerText);b.textContent='已复制 ✓';setTimeout(()=>b.textContent='复制代码',1600)}catch(err){const r=document.createRange();r.selectNodeContents(code);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='已选中，请复制'}})</script></body></html>

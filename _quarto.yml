@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: _site
+website:
+  title: "代码精灵学院"
+  navbar:
+    left:
+      - text: "首页"
+        href: index.qmd
+      - text: "Python 王国"
+        href: python/index.html
+      - text: "R 王国"
+        href: r/index.html
+      - text: "AI 使用 Tips"
+        href: index.qmd#ai-tips
+  page-footer:
+    left: "代码精灵学院 · 生物信息学入门实践"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-copy: true
+    code-overflow: wrap

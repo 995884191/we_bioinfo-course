@@ -1,0 +1,128 @@
+---
+title: "代码精灵学院｜生物信息学入门冒险"
+subtitle: "不用先成为程序员，也可以开始做生信。"
+lang: zh
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-copy: true
+    code-fold: false
+    smooth-scroll: true
+    embed-resources: true
+---
+
+::: {.hero}
+### 🪄 欢迎来到代码精灵学院
+# 让代码成为你的科研搭档
+
+电脑里住着许多代码精灵：有的来自 **R 王国**，有的来自 **Python 王国**。它们有各自的语言和专长。你不必一开始就读懂每一行代码——先学会描述任务、运行代码、看懂结果，再慢慢理解背后的原理。
+
+**学习目标：先做出成果，再逐步理解。**
+:::
+
+## 选择你的第一位精灵
+
+::: {.grid}
+::: {.card}
+### 🐍 Python 精灵
+擅长数据整理、自动化、机器学习与灵活的数据分析。
+
+[进入 Python 代码与图表](python/index.html){.btn .btn-primary}
+
+[下载 Python Notebook](downloads/01_Python_statistics.ipynb)
+:::
+
+::: {.card}
+### 📊 R 精灵
+擅长统计分析、科研绘图与经典生物信息学流程。
+
+[进入 R 代码与图表](r/index.html){.btn .btn-primary}
+
+[下载 RNA-seq 分析脚本](downloads/02_RNAseq_DESeq2_analysis.R)
+:::
+
+::: {.card}
+### 🤖 AI 搭档
+把目标、数据格式和完整报错告诉 AI，让它帮你解释、排查和修改。最后要自己检查结果是否合理。
+
+[查看 AI 使用小 Tips](#ai-tips){.btn .btn-primary}
+:::
+:::
+
+## 冒险地图：从新手村到生信大陆
+
+1. **精灵入住电脑**：准备软件、项目文件夹和示例数据。
+2. **学会沟通**：认识变量、数据表、函数、包和文件路径。
+3. **解锁科研绘图**：描述统计、箱线图、PCA、火山图和热图。
+4. **进入生信大陆**：用小型真实数据认识降维、注释和差异分析。
+5. **进阶学院（选修）**：机器学习、深度学习和复杂分析流程。
+
+![实践手册中的学习路线截图](assets/ppt-learning-path.png)
+
+## 第一个小任务：读入一份数据
+
+先别担心记不住语法。把下面代码复制到自己的环境中运行，观察输出；如果文件路径不同，先修改路径。
+
+### Python 版本
+
+```python
+import pandas as pd
+
+data = pd.read_csv("data/python_stats_example.csv")
+print(data.head())
+print(data.describe())
+```
+
+### R 版本
+
+```r
+data <- read.csv("data/python_stats_example.csv")
+head(data)
+summary(data)
+```
+
+::: {.callout-tip}
+## 精灵沟通口诀
+
+**说清目标 + 提供数据结构 + 贴出完整报错 + 说明已经尝试过什么。** 不要只说“代码不能运行”。
+:::
+
+## 📦 实验室资源仓库
+
+| 资源 | 用途 | 打开或下载 |
+|---|---|---|
+| 入门实践手册（Word） | 按步骤学习和记录 | [下载 DOCX](downloads/生物信息学入门实践手册.docx) |
+| Python 统计 Notebook | 交互式学习 Python 基础统计与绘图 | [下载 IPYNB](downloads/01_Python_statistics.ipynb) |
+| R / DESeq2 脚本 | RNA-seq 差异分析流程示例 | [下载 R 脚本](downloads/02_RNAseq_DESeq2_analysis.R) |
+| Python 示例数据 | 统计分析练习 | [下载 CSV](data/python_stats_example.csv) |
+| RNA-seq count 矩阵 | 差异分析练习 | [下载 CSV](data/rnaseq_counts.csv) |
+| 样本信息表 | 与 count 矩阵配套使用 | [下载 CSV](data/sample_metadata.csv) |
+
+![实践手册资源页截图](assets/ppt-resources.png)
+
+## 🧯 AI 使用小 Tips {#ai-tips}
+
+遇到报错不要慌。代码是可以排查的；AI 也会犯错，生成的参数和函数用法不一定正确。
+
+![AI 使用小 Tips 卡片](assets/ai-tips.png)
+
+1. **先冷静，收集完整信息。** 把报错文字、相关代码、运行环境和你做过的尝试一起发给 AI。
+2. **追问两三轮。** 请 AI 解释报错原因、给出最小修改，并说明为什么这样改。
+3. **换一种思路或另一个 AI。** 不同工具可能提供不同排查方向；不要把“问三次”当成硬性规则。
+4. **所有方案都不行？检查代码本身。** AI 可能编造参数、使用过时接口，或误解数据结构。搜索报错原文和包名，参考可信的代码示例，再结合自己的数据调整。
+5. **最后看官方文档。** 核对函数参数、输入格式、包版本和示例代码。对 R 包可查看 CRAN / Bioconductor 文档，对 Python 包可查看项目官方文档。
+6. **验证结果，而不只是验证代码能运行。** 检查样本顺序、数据维度、缺失值、图形标签和生物学解释。
+
+## 🎯 给自己的第一份通关任务
+
+- [ ] 成功打开 Python 或 R 的代码页面。
+- [ ] 下载示例数据，并读入数据表。
+- [ ] 运行一段代码，生成一个结果或图。
+- [ ] 遇到报错时，尝试按 AI Tips 的步骤排查。
+
+> 代码不是魔法咒语，而是一种表达步骤的语言。你不需要一口气学会全部，只要完成下一小步。
+
+::: {.small}
+本网站的示例数据为教学用途；分析结果不应直接当作真实生物学结论。网页浏览不需要安装 R 或 Python；若要亲自运行代码，则需要相应的软件环境或在线运行环境。
+:::
